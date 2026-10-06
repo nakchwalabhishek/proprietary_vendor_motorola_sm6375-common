@@ -2224,7 +2224,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmmosal_vendor",
                 "libDxHdcp",
-                "libmm-hdcpmgr",
+                "libmm-hdcpmgr_vendor_32",
                 "liblog",
                 "libutils",
                 "libcutils",
