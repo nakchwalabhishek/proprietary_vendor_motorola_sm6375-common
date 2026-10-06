@@ -2224,7 +2224,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmmosal_vendor",
                 "libDxHdcp",
-                "libmm-hdcpmgr_vendor_32",
+                "libmm-hdcpmgr",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -4086,6 +4086,33 @@ cc_prebuilt_library_shared {
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libqmi_client_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqsap_sdk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqsap_sdk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
