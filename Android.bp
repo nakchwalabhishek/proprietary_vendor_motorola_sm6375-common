@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "hardware/qcom/display",
         "device/motorola/sm6375-common",
         "hardware/motorola",
         "vendor/qcom/common/system/alarm",

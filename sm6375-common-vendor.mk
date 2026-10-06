@@ -287,7 +287,7 @@ PRODUCT_PACKAGES += \
     libgcs-osal \
     libgcs \
     liblistensoundmodel2 \
-    libmm-hdcpmgr \
+    libmm-hdcpmgr_vendor_32 \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
     libmulawdec \
@@ -754,7 +754,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libq3dtools_adreno_so
 
 PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 ifeq ($(TARGET_HAS_FM),true)
 
